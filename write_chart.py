@@ -17,7 +17,7 @@ bar_tps = alt.Chart(data).mark_bar().encode(
 
 dot_latency = alt.Chart(data).mark_circle(size=200).encode(
     x=alt.X("Database", title="Database"),
-    y=alt.Y("Latency (ms)", title="Average Latency (ms)", scale=alt.Scale(type="log")),  # 用 log scale 处理较小值
+    y=alt.Y("Latency (ms)", title="Average Latency (ms)", scale=alt.Scale(type="log")),
     color="Database"
 ).properties(
     title="MongoDB vs Redis: Write Latency"
