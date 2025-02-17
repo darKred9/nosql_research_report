@@ -2,6 +2,8 @@
 
 Yuchen Wang (yw7)
 
+This report is for Sample Topic 1.
+
 ## Write Performance Tests
 
 1.	Run `write_test_query.sh` to test Redis writing performance. (This script will also help install Redis if it’s not already installed.)
