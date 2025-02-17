@@ -1,13 +1,15 @@
 # NoSQL Research Report
 
+Yuchen Wang (yw7)
+
 ## Write Performance Tests
 
-1. Run 'write_test_query.sh' for Redis writing performance test. (This script will help install redis if not)
-2. Run 'write_test_mongo.py' for MongoDB writing performance test.
-3. 'write_chart.py' is for graphing the test results.
-4. 'write_test_mongo_many.py' is for comparing the performance between insert_one and insert_many.
+1.	Run `write_test_query.sh` to test Redis writing performance. (This script will also help install Redis if it’s not already installed.)
+2.	Run `write_test_mongo.py` to test MongoDB writing performance.
+3.	Use `write_chart.py` to generate graphs of the test results.
+4.	Run `write_test_mongo_many.py` to compare the performance of insert_one() and insert_many() in MongoDB.
 
 ## Query Performance Tests
 
-1. Run 'query_test' for Query Performance Tests of Redis and MongoDB.
-2. 'query_chart.py' is for graphing the test results.
+1.	Run `query_test` to test the query performance of Redis and MongoDB.
+2.	Use `query_chart.py` to generate graphs of the test results.
