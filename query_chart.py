@@ -20,6 +20,6 @@ grouped_bar = alt.Chart(df).mark_bar().encode(
     title='MongoDB vs Redis: Query Performance'
 )
 
-grouped_bar.save('performance_grouped.html')
-print("performance_grouped.html - generated!")
+grouped_bar.save('query_chart.html')
+print("query_chart.html - generated!")
 
