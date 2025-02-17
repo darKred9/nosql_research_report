@@ -9,7 +9,7 @@ db = client["benchmark"]
 collection = db["test"]
 
 # batch sizes
-batch_sizes = list(range(500, 60001, 2000))
+batch_sizes = list(range(1, 100001, 4000))
 num_records = 100000
 results = []
 
@@ -37,7 +37,7 @@ chart = alt.Chart(df).mark_line().encode(
     y=alt.Y("TPS", title="Transactions Per Second (TPS)"),
     tooltip=["Batch Size", "TPS"]
 ).properties(
-    title="MongoDB TPS vs. Batch Size"
+    title="MongoDB TPS over Batch Size"
 )
 
 chart.save('cc.html')
